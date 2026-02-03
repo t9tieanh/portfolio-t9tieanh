@@ -285,4 +285,14 @@ a {
   .heading::after {
     width: 100%;
   }
+
+  .typewriter {
+    white-space: normal;
+    border-right: none;
+    overflow: visible;
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 1s;
+    width: auto;
+    opacity: 0;
+  }
 }
