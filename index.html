@@ -53,16 +53,16 @@
   </nav>
 
   <main class="lg:relative pt-16">
-    <section id="home" class="container mx-auto max-w-7xl w-4/5 pt-8 pb-10 lg:py-24 lg:text-left">
+    <section id="home" class="section-panel section-home container mx-auto max-w-7xl w-4/5 pt-8 pb-10 lg:py-24 lg:text-left">
       <div class="px-4 sm:px-8 xl:pr-16">
         <p class="text-blue-300 py-4 font-mono animate-fade-in-up delay-100">Hi, my name is</p>
-        <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl">
           <span class="block py-2 text-white animate-fade-in-up delay-200">
             Pham Tien Anh.
           </span>
 
-          <span class="inline-block color-secondary py-2 opacity-80 typewriter delay-300">
-            I build scalable backend systems.
+          <span class="block hero-headline typewriter color-secondary py-2 opacity-80">
+            Engineering Behind Meaningful Products
           </span>
         </h1>
         <p
@@ -93,7 +93,7 @@
       </div>
     </section>
 
-    <section id="about" class="container mx-auto max-w-7xl w-4/5 lg:py-10 lg:text-left">
+    <section id="about" class="section-panel section-about container mx-auto max-w-7xl w-4/5 lg:py-10 lg:text-left">
       <div class="px-4 sm:px-8 xl:pr-16">
         <h2 class="heading text-xl color-secondary">
           <span class="text-blue-300">01.</span>
@@ -104,18 +104,20 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div class="col-span-1 md:col-span-2">
                 <p class="text-lg font-medium pb-4 leading-relaxed">
-                  Hello! I'm Pham Tien Anh, a passionate Backend Developer based in Ho Chi Minh City. I enjoy building
-                  robust and scalable server-side applications that solve complex problems.
+                  Hello! I'm Pham Tien Anh, a Backend Developer based in Ho Chi Minh City. I specialize in
+                  building enterprise-grade microservices systems with Java and Spring Boot, focusing on
+                  scalability, maintainability, and production resilience.
                 </p>
                 <p class="text-lg font-medium pb-4 leading-relaxed">
                   Currently, I'm working as a <span class="text-blue-300">Product Backend Developer at GEEK Up</span>,
-                  where I design and develop internal tools using NestJS with a focus on high performance and
-                  maintainability.
+                  where I design and develop microservices for a digital platform — handling complex business workflows,
+                  content management, and third-party system integrations.
                 </p>
                 <p class="text-lg font-medium pb-4 leading-relaxed">
-                  My expertise lies in <span class="text-blue-300">Microservices architecture</span>, distributed
-                  systems, and DevOps practices. I'm also a recipient of the University Academic Scholarship at HCMUTE
-                  and hold an AWS Academy Graduate badge.
+                  My expertise lies in <span class="text-blue-300">Microservices architecture</span>, workflow
+                  orchestration, event-driven systems, and cloud-native development. I'm also experienced in
+                  integrating AI capabilities such as semantic search, RAG (Retrieval-Augmented Generation),
+                  and workflow automation into products.
                 </p>
                 <p class="text-base color-secondary mb-4 font-mono">Here are a few technologies I've been working with
                   recently:</p>
@@ -156,9 +158,19 @@
                       gRPC</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fas fa-comments text-blue-300 text-base"></i>
-                    <span class="text-white group-hover:text-blue-300 transition-colors font-medium">Socket.IO /
-                      MongoDB</span>
+                    <i class="fas fa-cogs text-blue-300 text-base"></i>
+                    <span class="text-white group-hover:text-blue-300 transition-colors font-medium">Camunda 8 /
+                      BPMN</span>
+                  </div>
+                  <div class="flex items-center space-x-3 group cursor-default">
+                    <i class="fas fa-cloud text-blue-300 text-base"></i>
+                    <span class="text-white group-hover:text-blue-300 transition-colors font-medium">Spring Cloud /
+                      API Gateway</span>
+                  </div>
+                  <div class="flex items-center space-x-3 group cursor-default">
+                    <i class="fas fa-brain text-blue-300 text-base"></i>
+                    <span class="text-white group-hover:text-blue-300 transition-colors font-medium">AI / RAG / LLM
+                      Integration</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
                     <i class="fab fa-react text-blue-300 text-base"></i>
@@ -182,7 +194,7 @@
       </div>
     </section>
 
-    <section id="experience" class="container mx-auto md:max-w-5xl w-4/5 md:w-3/5 lg:py-10 lg:text-left">
+    <section id="experience" class="section-panel section-experience container mx-auto md:max-w-5xl w-4/5 md:w-3/5 lg:py-10 lg:text-left">
       <div class="px-4 sm:px-8 xl:pr-16">
         <h2 class="heading text-xl color-secondary">
           <span class="text-blue-300">02.</span>
@@ -201,12 +213,16 @@
               </h3>
               <p class="text-base color-secondary font-mono">Sep 2025 - Present</p>
               <ul class="experience-list mt-4 color-secondary text-sm md:text-base">
-                <li class="pl-4 mt-2">Designed and developed internal applications using NestJS, focusing on scalable
-                  architecture and long-term maintainability.</li>
-                <li class="pl-4 mt-2">Participated in product release sessions and managed deployment processes across
-                  staging and production environments.</li>
-                <li class="pl-4 mt-2">Implemented and maintained CI/CD pipelines using GitLab CI, reducing manual effort
-                  and improving code quality.</li>
+                <li class="pl-4 mt-2">Designed and developed microservices using Spring Boot and Java 21,
+                  following hexagonal architecture and API-first approach.</li>
+                <li class="pl-4 mt-2">Implemented workflow-driven business processes with BPMN orchestration,
+                  managing complex multi-step flows across multiple services.</li>
+                <li class="pl-4 mt-2">Integrated with CMS and CRM platforms for dynamic content delivery and
+                  customer lifecycle management.</li>
+                <li class="pl-4 mt-2">Built event-driven communication with message brokers, ensuring reliable
+                  async messaging and data consistency across distributed services.</li>
+                <li class="pl-4 mt-2">Set up monitoring and observability for distributed systems, ensuring
+                  high availability and quick incident response.</li>
               </ul>
             </div>
           </div>
@@ -279,16 +295,16 @@
       </div>
     </section>
 
-    <section id="work" class="container mx-auto max-w-7xl w-4/5 py-12 lg:py-18 lg:text-left">
+    <section id="work" class="section-panel section-work container mx-auto max-w-7xl w-4/5 py-12 lg:py-18 lg:text-left">
       <div class="px-4 sm:px-8 xl:pr-16">
         <h2 class="heading text-xl color-secondary">
-          <span class="text-blue-300">03.</span>
+          <span class="text-blue-300 mr-2">03.</span>
           Some Noteworthy Projects
         </h2>
         <div class="relative max-w-7xl mx-auto">
-          <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+          <div class="projects-row mt-12 w-full">
             <div
-              class="flex flex-col rounded-lg shadow-lg overflow-hidden transition-all duration-300 bg-light-navy hover:bg-gray-800 border border-transparent hover:border-blue-300 transform hover:-translate-y-2">
+              class="project-card flex flex-col rounded-lg shadow-lg overflow-hidden transition-all duration-300 bg-light-navy hover:bg-gray-800 border border-transparent hover:border-blue-300 transform hover:-translate-y-2">
               <div class="flex-1 p-6 flex flex-col justify-between">
                 <div class="flex justify-between">
                   <span class="pr-4 text-blue-300">
@@ -307,25 +323,28 @@
                 </div>
                 <div class="flex-1 mt-4">
                   <p class="text-xl font-semibold text-white">
-                    LEANOVA – Smart Learning
+                    LEARNOVA – AI-Powered E-Learning
                   </p>
                   <p class="mt-3 text-sm color-secondary">
-                    Microservices-based e-learning platform using Spring Cloud, NestJS, and gRPC. Features Saga pattern
-                    for distributed transactions and RabbitMQ for event-driven processing.
+                    AI-driven microservices e-learning platform featuring semantic chunking,
+                    RAG-based lesson Q&A, and automated quiz generation using LLMs. Integrates
+                    n8n workflow automation for AI agent capabilities and vector search (pgvector)
+                    for intelligent content retrieval.
                   </p>
-                </div>
-                <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-blue-300 opacity-80">
-                  <span>Spring Boot</span>
-                  <span>NestJS</span>
-                  <span>gRPC</span>
-                  <span>RabbitMQ</span>
-                  <span>AWS</span>
+                  <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-blue-300 opacity-80">
+                    <span>Spring Boot</span>
+                    <span>ReactJS</span>
+                    <span>gRPC</span>
+                    <span>RabbitMQ</span>
+                    <span>AI/RAG</span>
+                    <span>n8n</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div
-              class="flex flex-col rounded-lg shadow-lg overflow-hidden transition-all duration-300 bg-light-navy hover:bg-gray-800 border border-transparent hover:border-blue-300 transform hover:-translate-y-2">
+              class="project-card flex flex-col rounded-lg shadow-lg overflow-hidden transition-all duration-300 bg-light-navy hover:bg-gray-800 border border-transparent hover:border-blue-300 transform hover:-translate-y-2">
               <div class="flex-1 p-6 flex flex-col justify-between">
                 <div class="flex justify-between">
                   <span class="pr-4 text-blue-300">
@@ -358,7 +377,7 @@
             </div>
 
             <div
-              class="flex flex-col rounded-lg shadow-lg overflow-hidden transition-all duration-300 bg-light-navy hover:bg-gray-800 border border-transparent hover:border-blue-300 transform hover:-translate-y-2">
+              class="project-card flex flex-col rounded-lg shadow-lg overflow-hidden transition-all duration-300 bg-light-navy hover:bg-gray-800 border border-transparent hover:border-blue-300 transform hover:-translate-y-2">
               <div class="flex-1 p-6 flex flex-col justify-between">
                 <div class="flex justify-between">
                   <span class="pr-4 text-blue-300">
@@ -387,7 +406,7 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="container mx-auto max-w-7xl w-4/5 py-12 lg:py-18 lg:text-left">
+    <section id="contact" class="section-panel section-contact container mx-auto max-w-7xl w-4/5 py-12 lg:py-18 lg:text-left">
       <div class="px-4 sm:px-8 xl:pr-16">
         <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 class="text-xl color-secondary py-8">
