@@ -14,6 +14,26 @@
 </head>
 
 <body>
+  <div class="bg-shapes" aria-hidden="true">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+      <g class="bg-shapes-top">
+        <path fill="#0d1d36"
+          d="M1440 0H760c60 90 0 170 120 220s180-20 270 60 150 50 290 100z" />
+        <path fill="#112240"
+          d="M1440 0H950c40 70 10 130 100 160s130-10 200 50 120 40 190 60z" />
+        <path fill="#172b4d"
+          d="M1440 0h-310c20 50 10 90 80 110s110-10 150 40 60 30 80 35z" />
+      </g>
+      <g class="bg-shapes-bottom">
+        <path fill="#0d1d36"
+          d="M0 900h700c-60-80 0-140-120-180s-180 20-280-50S140 630 0 580z" />
+        <path fill="#112240"
+          d="M0 900h500c-40-60-10-110-100-140s-130 10-200-40S80 690 0 680z" />
+        <path fill="#172b4d"
+          d="M0 900h300c-20-40-10-70-70-90s-100 0-140-30S20 760 0 760z" />
+      </g>
+    </svg>
+  </div>
   <nav class="bg-transparent">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
@@ -57,7 +77,7 @@
       <div class="px-4 sm:px-8 xl:pr-16">
         <p class="text-blue-300 py-4 font-mono animate-fade-in-up delay-100">Hi, my name is</p>
         <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl">
-          <span class="block py-2 text-white animate-fade-in-up delay-200">
+          <span class="block py-2 hero-name animate-fade-in-up delay-200">
             Pham Tien Anh.
           </span>
 
@@ -67,27 +87,23 @@
         </h1>
         <p
           class="py-4 text-base color-secondary sm:text-lg md:mt-2 md:max-w-3xl leading-relaxed animate-fade-in-up delay-400">
-          I'm a <span class="text-blue-300">Backend Developer</span> with experience in the banking domain, building
-          scalable systems with Spring Boot, Node.js, NestJS and microservice architecture. I'm interested in cloud
-          technologies and in applying AI to real products.
+          Let's connect with me! 👋
         </p>
-        <div class="py-4 animate-fade-in-up delay-500">
-          <a target="_blank" class="pr-4 hover:text-blue-300 transition-colors" href="https://github.com/t9tieanh">
-            <i class="fab fa-github fa-lg"></i>
+        <div class="hero-socials py-4 animate-fade-in-up delay-500">
+          <a target="_blank" href="https://github.com/t9tieanh" aria-label="GitHub">
+            <img src="./images/social/github.svg" alt="">
           </a>
-          <a target="_blank" class="pr-4 hover:text-blue-300 transition-colors"
-            href="https://www.linkedin.com/in/t9tieanh">
-            <i class="fab fa-linkedin fa-lg"></i>
+          <a target="_blank" href="https://www.linkedin.com/in/t9tieanh" aria-label="LinkedIn">
+            <img src="./images/social/linkedin.svg" alt="">
           </a>
-          <a target="_blank" class="pr-4 hover:text-blue-300 transition-colors" href="./cv/mycv.pdf">
-            <i class="fas fa-file-pdf fa-lg"></i>
+          <a target="_blank" href="./cv/mycv.pdf" aria-label="CV (PDF)">
+            <i class="fas fa-file-pdf"></i>
           </a>
-          <a target="_blank" class="pr-4 hover:text-blue-300 transition-colors" href="mailto:phama9162@gmail.com">
-            <i class="fas fa-envelope fa-lg"></i>
+          <a target="_blank" href="mailto:phama9162@gmail.com" aria-label="Email">
+            <img src="./images/social/gmail.svg" alt="">
           </a>
-          <a target="_blank" class="pr-4 hover:text-blue-300 transition-colors"
-            href="https://www.facebook.com/tieanh19">
-            <i class="fab fa-facebook fa-lg"></i>
+          <a target="_blank" href="https://www.facebook.com/tieanh19" aria-label="Facebook">
+            <img src="./images/social/facebook.svg" alt="">
           </a>
         </div>
       </div>
@@ -101,91 +117,136 @@
         </h2>
         <div class="max-w-7xl py-8 sm:py-12">
           <div class="relative">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div class="col-span-1 md:col-span-2">
-                <p class="text-lg font-medium pb-4 leading-relaxed">
-                  Hello! I'm Pham Tien Anh, a Backend Developer based in Ho Chi Minh City. I build scalable
-                  systems with Spring Boot, Node.js, NestJS and microservice architecture, with experience in the
-                  banking domain.
-                </p>
-                <p class="text-lg font-medium pb-4 leading-relaxed">
-                  Currently, I'm working as a <span class="text-blue-300">Backend Developer at GEEK Up</span>,
-                  where I work on a loan application processing system for a bank and a home loan platform for real
-                  estate — from workflow orchestration and background jobs to deploying on OpenShift/Kubernetes.
-                </p>
-                <p class="text-lg font-medium pb-4 leading-relaxed">
-                  I'm hands-on with <span class="text-blue-300">event-driven messaging</span>, background processing,
-                  workflow orchestration and cloud deployment. I'm also interested in applying AI to real products,
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+              <div class="col-span-1 md:col-span-7">
+                <p class="text-lg font-medium pb-6 leading-relaxed">
+                  <span class="text-blue-300">Backend Developer</span> with experience in the banking domain, building
+                  scalable systems with Spring Boot, Node.js, NestJS and microservice architecture. Hands-on with
+                  event-driven messaging, background processing, workflow orchestration and deploying on
+                  OpenShift/Kubernetes. Interested in cloud technologies and in applying AI to real products,
                   including RAG, chunking strategies and LLM integration.
                 </p>
                 <p class="text-base color-secondary mb-4 font-mono">Here are a few technologies I've been working with
                   recently:</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-sm">
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fab fa-java text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/java.svg" alt="">
+                      <img src="./images/tech/spring.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">Java (Spring
                       Boot)</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fab fa-node-js text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/typescript.svg" alt="">
+                      <img src="./images/tech/nestjs.svg" alt="">
+                      <img src="./images/tech/nodejs.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">TypeScript
                       (NestJS / Node.js)</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fas fa-database text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/postgresql.svg" alt="">
+                      <img src="./images/tech/mysql.svg" alt="">
+                      <img src="./images/tech/mongodb.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">PostgreSQL /
                       MySQL / MongoDB</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fas fa-server text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/redis.svg" alt="">
+                      <img src="./images/tech/rabbitmq.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">Redis /
                       RabbitMQ / BullMQ</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fab fa-docker text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/docker.svg" alt="">
+                      <img src="./images/tech/openshift.svg" alt="">
+                      <img src="./images/tech/kubernetes.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">Docker /
                       OpenShift / Kubernetes</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fab fa-aws text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/aws.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">AWS (EC2, S3,
                       CloudFront)</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fas fa-project-diagram text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/grpc.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">Microservices /
                       gRPC</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fas fa-cogs text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/camunda.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">Camunda /
                       BPMN</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fas fa-cloud text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/directus.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">Directus
                       CMS</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fas fa-brain text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/langchain.svg" alt="">
+                      <img src="./images/tech/huggingface.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">AI / RAG / LLM
                       Integration</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fab fa-react text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/react.svg" alt="">
+                      <img src="./images/tech/nodejs.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">ReactJS /
                       Node.js</span>
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
-                    <i class="fas fa-infinity text-blue-300 text-base"></i>
+                    <span class="tech-logos">
+                      <img src="./images/tech/gitlab.svg" alt="">
+                      <img src="./images/tech/githubactions.svg" alt="">
+                      <img src="./images/tech/jenkins.svg" alt="">
+                    </span>
                     <span class="text-white group-hover:text-blue-300 transition-colors font-medium">CI/CD (GitLab CI,
                       GitHub Actions, Jenkins)</span>
                   </div>
                 </div>
               </div>
-              <div class="col-span-1 px-0 md:px-8">
+              <div class="col-span-1 md:col-span-5 md:px-6">
                 <!-- YOUR PROFILE IMAGE -->
-                <img class="profile-img shadow-xl mx-auto md:ml-auto" src="./images/avt.jpg" alt="Pham Tien Anh">
+                <div class="profile-img profile-slideshow shadow-xl mx-auto md:ml-auto">
+                  <div class="profile-track">
+                    <img src="./images/avt.jpg" alt="Pham Tien Anh">
+                    <img src="./images/avt-2.jpg" alt="Pham Tien Anh">
+                    <img src="./images/avt-3.jpg" alt="Pham Tien Anh">
+                  </div>
+                  <button type="button" class="profile-nav profile-prev" aria-label="Previous photo">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button type="button" class="profile-nav profile-next" aria-label="Next photo">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                  <div class="profile-dots">
+                    <button type="button" class="is-active" aria-label="Photo 1"></button>
+                    <button type="button" aria-label="Photo 2"></button>
+                    <button type="button" aria-label="Photo 3"></button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -203,18 +264,25 @@
           <!-- YOUR WORK EXPERIENCE -->
           <div class="relative pt-8 sm:pt-12 flex flex-col md:flex-row gap-4 md:gap-6">
             <div class="flex-shrink-0 w-16 h-16 bg-white rounded-md flex items-center justify-center p-2">
-              <img src="./images/logo-geekup.webp" alt="GEEK Up Logo" class="max-w-full max-h-full object-contain">
+              <a href="https://geekup.vn/" target="_blank" rel="noopener" class="flex items-center justify-center w-full h-full"><img src="./images/logo-geekup.webp" alt="GEEK Up Logo" class="max-w-full max-h-full object-contain"></a>
             </div>
             <div class="flex-1">
               <h3 class="text-lg text-semibold text-white">
                 Backend Developer
-                <span class="text-blue-300"> @ GEEK Up</span>
+                <span class="text-blue-300"> @ <a href="https://geekup.vn/" target="_blank" rel="noopener" class="company-link">GEEK Up</a></span>
               </h3>
               <p class="text-base color-secondary font-mono">Sep 2025 - Present</p>
 
               <h4 class="mt-6 text-base font-semibold text-white">Real Estate – Home Loan Platform</h4>
-              <p class="text-xs font-mono text-blue-300 opacity-80 mt-1">Directus · Node.js · BullMQ ·
-                OpenShift/Kubernetes · Jenkins</p>
+              <div class="stack-icons mt-2">
+                <img src="./images/tech/directus.svg" alt="Directus" title="Directus">
+                <img src="./images/tech/nodejs.svg" alt="Node.js" title="Node.js">
+                <img src="./images/tech/openshift.svg" alt="OpenShift" title="OpenShift">
+                <img src="./images/tech/kubernetes.svg" alt="Kubernetes" title="Kubernetes">
+                <img src="./images/tech/jenkins.svg" alt="Jenkins" title="Jenkins">
+                <img src="./images/tech/gitlab.svg" alt="GitLab CI" title="GitLab CI">
+                <img src="./images/tech/bullmq.png" alt="BullMQ" title="BullMQ">
+              </div>
               <ul class="experience-list mt-3 color-secondary text-sm md:text-base">
                 <li class="pl-4 mt-2">Built the CMS for a B2B2C platform that helps home buyers find properties and
                   get financing. The CMS supplies data to the backend and mobile apps, syncs listings from partner
@@ -223,41 +291,44 @@
                 <li class="pl-4 mt-2">Built background jobs for heavy media ingestion that pull image and video assets
                   in batches of up to 200 files, capped at 6 GB per run. The jobs are designed to scale horizontally
                   on Kubernetes.</li>
+                <li class="pl-4 mt-2">Set up GitLab CI/CD pipelines on the company's internal GitLab to build and
+                  deploy automatically to the dev and staging environments.</li>
                 <li class="pl-4 mt-2">Worked directly with client stakeholders to clarify requirements and plan
                   releases. Deployed releases to the client's OpenShift/Kubernetes environment through their Jenkins
                   pipelines.</li>
               </ul>
 
               <h4 class="mt-6 text-base font-semibold text-white">Banking – Loan Application Processing System</h4>
-              <p class="text-xs font-mono text-blue-300 opacity-80 mt-1">Spring Boot · Camunda (BPMN) · RabbitMQ ·
-                Microservices · AWS S3</p>
+              <div class="stack-icons mt-2">
+                <img src="./images/tech/spring.svg" alt="Spring Boot" title="Spring Boot">
+                <img src="./images/tech/camunda.svg" alt="Camunda (BPMN)" title="Camunda (BPMN)">
+                <img src="./images/tech/rabbitmq.svg" alt="RabbitMQ" title="RabbitMQ">
+                <img src="./images/tech/aws.svg" alt="AWS S3" title="AWS S3">
+                <img src="./images/tech/gitlab.svg" alt="GitLab CI" title="GitLab CI">
+                <img src="./images/tech/microservices.svg" alt="Microservices" title="Microservices">
+              </div>
               <ul class="experience-list mt-3 color-secondary text-sm md:text-base">
-                <li class="pl-4 mt-2">Developed Spring Boot microservices for a loan support platform, using Camunda
-                  to orchestrate loan applications across services through each processing stage and on to multiple
+                <li class="pl-4 mt-2">Developed Spring Boot microservices for a system that helps users submit
+                  applications to open new loans, using Camunda to orchestrate loan applications across services through each processing stage and on to multiple
                   internal and partner systems.</li>
                 <li class="pl-4 mt-2">Used RabbitMQ for asynchronous, event-driven communication between services,
                   which keeps them loosely coupled, and AWS S3 to store loan documents.</li>
                 <li class="pl-4 mt-2">Applied design patterns such as Strategy and Factory to keep the codebase
                   extensible, and used shared API contracts to keep API specs consistent across services, making
                   integration easier for the frontend team and external systems.</li>
-              </ul>
-
-              <h4 class="mt-6 text-base font-semibold text-white">Team CI/CD</h4>
-              <p class="text-xs font-mono text-blue-300 opacity-80 mt-1">GitLab CI</p>
-              <ul class="experience-list mt-3 color-secondary text-sm md:text-base">
-                <li class="pl-4 mt-2">Set up GitLab CI/CD pipelines that automate build, test and deployment for the
-                  team and remove manual deploys.</li>
+                <li class="pl-4 mt-2">Set up GitLab CI/CD pipelines on the internal GitLab for the dev and staging
+                  environments of each service.</li>
               </ul>
             </div>
           </div>
           <div class="relative pt-8 sm:pt-12 flex flex-col md:flex-row gap-4 md:gap-6">
             <div class="flex-shrink-0 w-16 h-16 bg-white rounded-md flex items-center justify-center p-2">
-              <img src="./images/logo-bitgroup.png" alt="BIT GROUP Logo" class="max-w-full max-h-full object-contain">
+              <a href="https://bit.com.vn/" target="_blank" rel="noopener" class="flex items-center justify-center w-full h-full"><img src="./images/logo-bitgroup.png" alt="BIT GROUP Logo" class="max-w-full max-h-full object-contain"></a>
             </div>
             <div class="flex-1">
               <h3 class="text-lg text-semibold text-white">
                 Fullstack Developer Intern
-                <span class="text-blue-300"> @ BIT GROUP</span>
+                <span class="text-blue-300"> @ <a href="https://bit.com.vn/" target="_blank" rel="noopener" class="company-link">BIT GROUP</a></span>
               </h3>
               <p class="text-base color-secondary font-mono">Jun 2025 - Sep 2025</p>
               <ul class="experience-list mt-4 color-secondary text-sm md:text-base">
@@ -280,8 +351,8 @@
                 <span class="text-blue-300"> @ HCMC University of Technology And Education (HCMUTE)</span>
               </h3>
               <p class="text-base color-secondary">10/2022 - 09/2026</p>
-              <p class="text-sm color-secondary">Graduated with <span class="text-blue-300">High Distinction</span> ·
-                GPA 3.68/4.0</p>
+              <p class="text-sm color-secondary">Graduated with <strong class="font-semibold"><span class="text-blue-300">High
+                  Distinction</span> · GPA 3.68/4.0</strong></p>
               <p class="text-sm color-secondary">Academic Encouragement Scholarship (2 semesters)</p>
             </div>
           </div>
@@ -290,8 +361,8 @@
               <i class="fas fa-award text-blue-300"></i> Certifications
             </h2>
             <div class="relative pt-4 sm:pt-6 flex items-start gap-4">
-              <div class="text-blue-300 pt-1 text-2xl">
-                <i class="fab fa-aws"></i>
+              <div class="flex-shrink-0 w-16 h-16 bg-white rounded-md flex items-center justify-center p-2">
+                <img src="./images/cert/aws.svg" alt="AWS logo" class="max-w-full max-h-full object-contain">
               </div>
               <div>
                 <h3 class="text-lg text-semibold text-white">
@@ -302,8 +373,8 @@
               </div>
             </div>
             <div class="relative pt-4 sm:pt-6 flex items-start gap-4">
-              <div class="text-blue-300 pt-1 text-2xl">
-                <i class="fas fa-language"></i>
+              <div class="flex-shrink-0 w-16 h-16 bg-white rounded-md flex items-center justify-center p-2">
+                <img src="./images/cert/toeic.png" alt="TOEIC logo" class="max-w-full max-h-full object-contain">
               </div>
               <div>
                 <h3 class="text-lg text-semibold text-white">
@@ -353,14 +424,13 @@
                     with semantic chunking and answers questions with RAG. Saga pattern for the purchase flow, gRPC
                     and RabbitMQ between services, chunked uploads via S3 presigned URLs and CloudFront.
                   </p>
-                  <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-blue-300 opacity-80">
-                    <span>Spring Boot</span>
-                    <span>NodeJS</span>
-                    <span>gRPC</span>
-                    <span>RabbitMQ</span>
-                    <span>Saga</span>
-                    <span>AWS S3/CloudFront</span>
-                    <span>AI/RAG</span>
+                  <div class="stack-icons mt-6">
+                    <img src="./images/tech/spring.svg" alt="Spring Boot" title="Spring Boot">
+                    <img src="./images/tech/nodejs.svg" alt="Node.js" title="Node.js">
+                    <img src="./images/tech/grpc.svg" alt="gRPC" title="gRPC">
+                    <img src="./images/tech/rabbitmq.svg" alt="RabbitMQ" title="RabbitMQ">
+                    <img src="./images/tech/aws.svg" alt="AWS S3/CloudFront" title="AWS S3/CloudFront">
+                    <span class="stack-more" title="Saga pattern, AI / RAG (OpenAI)">+2</span>
                   </div>
                 </div>
               </div>
@@ -389,12 +459,12 @@
                     notifications using RabbitMQ and Redis caching.
                   </p>
                 </div>
-                <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-blue-300 opacity-80">
-                  <span>Node.js</span>
-                  <span>ReactJS</span>
-                  <span>RabbitMQ</span>
-                  <span>Redis</span>
-                  <span>Socket.IO</span>
+                <div class="stack-icons mt-6">
+                  <img src="./images/tech/nodejs.svg" alt="Node.js" title="Node.js">
+                  <img src="./images/tech/react.svg" alt="ReactJS" title="ReactJS">
+                  <img src="./images/tech/rabbitmq.svg" alt="RabbitMQ" title="RabbitMQ">
+                  <img src="./images/tech/redis.svg" alt="Redis" title="Redis">
+                  <img src="./images/tech/socketio.svg" alt="Socket.IO" title="Socket.IO">
                 </div>
               </div>
             </div>
@@ -422,12 +492,12 @@
                     integration, and Docker containerization.
                   </p>
                 </div>
-                <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-blue-300 opacity-80">
-                  <span>Spring Boot</span>
-                  <span>ReactJS</span>
-                  <span>OAuth2</span>
-                  <span>VNPay</span>
-                  <span>Docker</span>
+                <div class="stack-icons mt-6">
+                  <img src="./images/tech/spring.svg" alt="Spring Boot" title="Spring Boot">
+                  <img src="./images/tech/react.svg" alt="ReactJS" title="ReactJS">
+                  <img src="./images/tech/docker.svg" alt="Docker" title="Docker">
+                  <img src="./images/tech/oauth.svg" alt="OAuth2" title="OAuth2">
+                  <img src="./images/tech/vnpay.svg" alt="VNPay" title="VNPay">
                 </div>
               </div>
             </div>
@@ -449,26 +519,26 @@
             I'm always open to hearing about new projects and opportunities. Whether you have a question or just want to
             say hi, I'll try my best to get back to you!
           </p>
-          <div class="mt-10 flex flex-wrap justify-center gap-6">
+          <div class="mt-10 flex flex-nowrap justify-center gap-3 sm:gap-4">
             <a target="_blank" href="mailto:phama9162@gmail.com"
-              class="flex items-center space-x-2 px-6 py-3 border border-blue-300 text-blue-300 font-medium rounded-md hover:bg-blue-300 hover:text-navy transition-all duration-300">
-              <i class="fas fa-envelope"></i>
-              <span>Email</span>
+              class="flex flex-shrink-0 items-center space-x-2 px-4 sm:px-5 py-3 border border-blue-300 text-blue-300 font-medium rounded-md hover:bg-blue-300 hover:text-navy transition-all duration-300 whitespace-nowrap">
+              <img class="contact-logo" src="./images/social/gmail.svg" alt="">
+              <span class="hidden lg:inline">Email</span>
             </a>
             <a target="_blank" href="https://github.com/t9tieanh"
-              class="flex items-center space-x-2 px-6 py-3 border border-blue-300 text-blue-300 font-medium rounded-md hover:bg-blue-300 hover:text-navy transition-all duration-300">
-              <i class="fab fa-github"></i>
-              <span>GitHub</span>
+              class="flex flex-shrink-0 items-center space-x-2 px-4 sm:px-5 py-3 border border-blue-300 text-blue-300 font-medium rounded-md hover:bg-blue-300 hover:text-navy transition-all duration-300 whitespace-nowrap">
+              <img class="contact-logo" src="./images/social/github.svg" alt="">
+              <span class="hidden lg:inline">GitHub</span>
             </a>
             <a target="_blank" href="https://www.linkedin.com/in/t9tieanh"
-              class="flex items-center space-x-2 px-6 py-3 border border-blue-300 text-blue-300 font-medium rounded-md hover:bg-blue-300 hover:text-navy transition-all duration-300">
-              <i class="fab fa-linkedin"></i>
-              <span>LinkedIn</span>
+              class="flex flex-shrink-0 items-center space-x-2 px-4 sm:px-5 py-3 border border-blue-300 text-blue-300 font-medium rounded-md hover:bg-blue-300 hover:text-navy transition-all duration-300 whitespace-nowrap">
+              <img class="contact-logo" src="./images/social/linkedin.svg" alt="">
+              <span class="hidden lg:inline">LinkedIn</span>
             </a>
             <a target="_blank" href="https://www.facebook.com/tieanh19"
-              class="flex items-center space-x-2 px-6 py-3 border border-blue-300 text-blue-300 font-medium rounded-md hover:bg-blue-300 hover:text-navy transition-all duration-300">
-              <i class="fab fa-facebook-f"></i>
-              <span>Facebook</span>
+              class="flex flex-shrink-0 items-center space-x-2 px-4 sm:px-5 py-3 border border-blue-300 text-blue-300 font-medium rounded-md hover:bg-blue-300 hover:text-navy transition-all duration-300 whitespace-nowrap">
+              <img class="contact-logo" src="./images/social/facebook.svg" alt="">
+              <span class="hidden lg:inline">Facebook</span>
             </a>
           </div>
         </div>
@@ -483,6 +553,63 @@
     </div>
   </footer>
   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slideshow = document.querySelector('.profile-slideshow');
+      if (slideshow) {
+        const track = slideshow.querySelector('.profile-track');
+        const dots = [...slideshow.querySelectorAll('.profile-dots button')];
+        const count = track.children.length;
+        let current = 0;
+        let moving = false;
+        const goTo = index => {
+          index = (index + count) % count;
+          if (moving || index === current) return;
+          current = index;
+          moving = true;
+          track.style.transform = `translateX(-${index * 100}%)`;
+          dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+          setTimeout(() => { moving = false; }, 500);
+        };
+        slideshow.querySelector('.profile-prev').addEventListener('click', () => goTo(current - 1));
+        slideshow.querySelector('.profile-next').addEventListener('click', () => goTo(current + 1));
+        dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+      }
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      const groups = [
+        ['.section-about .heading, .section-about p, .section-about .grid.text-sm', 0],
+        ['.section-experience .heading, .section-experience .relative.flex, .section-experience h2', 0],
+        ['.section-work .heading', 0],
+        ['.project-card', 60],
+        ['.section-contact h2, .section-contact p, .section-contact .flex-wrap', 60],
+      ];
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          el.classList.add('is-visible');
+          observer.unobserve(el);
+          const cleanUp = event => {
+            if (event.target !== el) return;
+            el.removeEventListener('transitionend', cleanUp);
+            el.classList.remove('reveal', 'is-visible');
+            el.style.removeProperty('--reveal-delay');
+          };
+          el.addEventListener('transitionend', cleanUp);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+
+      groups.forEach(([selector, stagger]) => {
+        document.querySelectorAll(selector).forEach((el, i) => {
+          el.classList.add('reveal');
+          if (stagger) el.style.setProperty('--reveal-delay', `${i * stagger}ms`);
+          observer.observe(el);
+        });
+      });
+    });
+
     // Scroll Spy & Header Shadow
     document.addEventListener('DOMContentLoaded', () => {
       const sections = document.querySelectorAll('section');
