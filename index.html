@@ -147,9 +147,9 @@
                 <p class="text-lg font-medium pb-6 leading-relaxed">
                   <span class="text-blue-300">Backend Developer</span> with experience in the banking domain, building
                   scalable systems with Spring Boot, Node.js, NestJS and microservice architecture. Hands-on with
-                  event-driven messaging, background processing, workflow orchestration and deploying on
-                  OpenShift/Kubernetes. Interested in cloud technologies and in applying AI to real products,
-                  including RAG, chunking strategies and LLM integration.
+                  event-driven messaging, background processing, workflow orchestration and horizontally scalable
+                  services on platforms such as Kubernetes. Interested in cloud technologies and in applying AI to
+                  real products, including RAG, chunking strategies and LLM integration.
                 </p>
                 <p class="text-base color-secondary mb-4 font-mono">Here are a few technologies I've been working with
                   recently:</p>
@@ -235,14 +235,6 @@
                   </div>
                   <div class="flex items-center space-x-3 group cursor-default">
                     <span class="tech-logos">
-                      <img src="./images/tech/react.svg" alt="" width="22" height="22">
-                      <img src="./images/tech/nodejs.svg" alt="" width="22" height="22">
-                    </span>
-                    <span class="text-white group-hover:text-blue-300 transition-colors font-medium">ReactJS /
-                      Node.js</span>
-                  </div>
-                  <div class="flex items-center space-x-3 group cursor-default">
-                    <span class="tech-logos">
                       <img src="./images/tech/gitlab.svg" alt="" width="22" height="22">
                       <img src="./images/tech/githubactions.svg" alt="" width="22" height="22">
                       <img src="./images/tech/jenkins.svg" alt="" width="22" height="22">
@@ -298,7 +290,7 @@
               </h3>
               <p class="text-base color-secondary font-mono">Sep 2025 - Present</p>
 
-              <h4 class="mt-6 text-base font-semibold text-white">Real Estate – Home Loan Platform</h4>
+              <h4 class="mt-6 text-base font-semibold text-white">Real Estate Content Platform</h4>
               <div class="stack-icons mt-2">
                 <img src="./images/tech/directus.svg" alt="Directus" title="Directus" width="22" height="22">
                 <img src="./images/tech/nodejs.svg" alt="Node.js" title="Node.js" width="22" height="22">
@@ -310,12 +302,12 @@
               </div>
               <ul class="experience-list mt-3 color-secondary text-sm md:text-base">
                 <li class="pl-4 mt-2">Built the CMS for a B2B2C platform that helps home buyers find properties and
-                  get financing. The CMS supplies data to the backend and mobile apps, syncs listings from partner
-                  portals to enrich property data, and manages partner promotions and advertising that bring in more
-                  users.</li>
-                <li class="pl-4 mt-2">Built background jobs for heavy media ingestion that pull image and video assets
-                  in batches of up to 200 files, capped at 6 GB per run. The jobs are designed to scale horizontally
-                  on Kubernetes.</li>
+                  get financing. It supplies property data to the backend and mobile apps, and manages partner
+                  promotions and advertising that bring in more users.</li>
+                <li class="pl-4 mt-2">Built queue-based background jobs (BullMQ) that sync listings and media from
+                  partner portals over FTP to enrich property data, distributing heavy ingestion across workers in
+                  batches of up to 200 image and video files, capped at 6 GB per run. The workers are designed to
+                  scale horizontally on Kubernetes.</li>
                 <li class="pl-4 mt-2">Set up GitLab CI/CD pipelines on the company's internal GitLab to build and
                   deploy automatically to the dev and staging environments.</li>
                 <li class="pl-4 mt-2">Worked directly with client stakeholders to clarify requirements and plan
@@ -323,7 +315,7 @@
                   pipelines.</li>
               </ul>
 
-              <h4 class="mt-6 text-base font-semibold text-white">Banking – Loan Application Processing System</h4>
+              <h4 class="mt-6 text-base font-semibold text-white">Digital Onboarding Platform</h4>
               <div class="stack-icons mt-2">
                 <img src="./images/tech/spring.svg" alt="Spring Boot" title="Spring Boot" width="22" height="22">
                 <img src="./images/tech/camunda.svg" alt="Camunda (BPMN)" title="Camunda (BPMN)" width="22" height="22">
@@ -334,8 +326,9 @@
               </div>
               <ul class="experience-list mt-3 color-secondary text-sm md:text-base">
                 <li class="pl-4 mt-2">Developed Spring Boot microservices for a system that helps users submit
-                  applications to open new loans, using Camunda to orchestrate loan applications across services through each processing stage and on to multiple
-                  internal and partner systems.</li>
+                  applications to open new loans and lets the bank monitor those loans after disbursement, using
+                  Camunda to orchestrate loan applications across services through each processing stage and on to
+                  multiple internal and partner systems such as the CRM and the core banking system.</li>
                 <li class="pl-4 mt-2">Used RabbitMQ for asynchronous, event-driven communication between services,
                   which keeps them loosely coupled, and AWS S3 to store loan documents.</li>
                 <li class="pl-4 mt-2">Applied design patterns such as Strategy and Factory to keep the codebase
@@ -358,7 +351,9 @@
               <p class="text-base color-secondary font-mono">Jun 2025 - Sep 2025</p>
               <ul class="experience-list mt-4 color-secondary text-sm md:text-base">
                 <li class="pl-4 mt-2">Built booking APIs for a sports venue booking platform with Redis caching,
-                  Socket.IO real-time updates and OAuth2, plus a ReactJS admin panel.</li>
+                  Socket.IO real-time updates and OAuth2.</li>
+                <li class="pl-4 mt-2">Used Redis distributed locks to prevent race conditions when users book the same
+                  slot concurrently.</li>
               </ul>
             </div>
           </div>
